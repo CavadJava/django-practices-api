@@ -18,19 +18,19 @@ from django.urls import path,include
 # from .views import homePageView
 
 # import from django_rest_swagger
-from rest_framework_swagger.views import get_swagger_view
+# from rest_framework_swagger.views import get_swagger_view
 
 from crudexample import views
 
 # schema_view = get_swagger_view(title='Author\'s Haven API')
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin', admin.site.urls),
 
     path('', views.homePageView),
 
-    path('api/', include('examples.urls')),
-    path('api/blogspot/', include('blogspot.urls')),
+    path('example', include('examples.urls')),
+    path('blogspot', include('blogspot.urls')),
 
     # path('', homePageView, name='home'),
     # path('', schema_view)

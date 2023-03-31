@@ -19,11 +19,11 @@ from . import views
 
 urlpatterns = [
     path('', views.getFood),
-    path('hello/', views.getHello),
-    path('get/', views.getFood),
-    path('post/', views.postFood),
-    path('index/', views.index),
-    path('index/form/', views.indexForm),
-    path('index/student/form/', views.indexStudent),
+    path('/hello/', views.getHello),
+    path('/get/', views.getFood),
+    path('/post/', views.postFood),
+    path('/index/', views.index),
+    path('/index/form/', views.indexForm),
+    path('/index/student/form/', views.indexStudent),
 ]
 
